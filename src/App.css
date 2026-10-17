@@ -1,0 +1,32 @@
+.card {
+  min-height: 400px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card .card-img-top {
+  max-height: 200px;
+  margin-inline: auto;
+  object-fit: contain;
+}
+.card-text {
+  text-transform: uppercase;
+}
+.card-title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.details {
+  background-color: lightgoldenrodyellow;
+  padding: 10px 40px 50px;
+}
+.details p {
+  text-align: left;
+}
+
+.details .img-small {
+  max-width: 300px;
+  margin-inline: auto;
+}
