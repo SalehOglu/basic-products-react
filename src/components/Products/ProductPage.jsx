@@ -1,11 +1,11 @@
-import ProductsList from './ProductsList';
+import { Outlet } from 'react-router';
 
-export default function AboutPage() {
+export default function ProductPage() {
     return(
         <>
            <div className="container my-5">
             <h2 className="mb-4">All Products</h2>
-            <ProductsList /> 
+            <Outlet />
           </div>
         </>
     )

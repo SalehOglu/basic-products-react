@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Homepage from './components/Homepage';
 import About from './components/About';
 import ProductPage from './components/Products/ProductPage';
+import ProductsList from './components/Products/ProductsList';
 import { Routes, Route } from 'react-router';
 import ProductDetails from './components/Products/ProductDetails';
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route  path="/" element={<Homepage/>}/>
       <Route  path="/about" element={<About/>}/>
       <Route  path="/products" element={<ProductPage/>}>
+        <Route index element={<ProductsList/>}/>
         <Route  path=":id" element={<ProductDetails/>}/>
       </Route>
     </Routes>
